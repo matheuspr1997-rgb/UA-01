@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    background-color: var(--cor-clara1);
+    gap: 0px;
+    margin: 0px;
+    padding: 0.5em;
+}
+
+.title, .subtitle, .description{
+    padding: 0.25em;
+    margin: 5px;
+    font-family:'Courier New', Courier, monospace 
+}
+
+.description{
+    width: 40%;
+    text-align: center;
+}
+.title{
+    color: var(--cor-secundaria);
+}

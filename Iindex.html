@@ -1,0 +1,122 @@
+<!-- Diante desse contexto, você definiu as tarefas a serem realizadas para melhorar a página web seguindo as etapas:
+
+a) Criar o cabeçalho da página contendo:
+
+    o nome da livraria;
+    um título principal (<h1>);
+    um pequeno texto de apresentação.
+
+b) Organizar o menu principal utilizando uma lista não ordenada (<ul>) com, no mínimo, cinco opções de navegação. Utilize a propriedade CSS list-style-type para alterar o marcador da lista.
+
+c) Criar uma lista ordenada (<ol>) apresentando as etapas para realizar uma compra no site, contendo pelo menos cinco itens.
+
+d) Utilizar uma lista de descrição (<dl>) para apresentar três categorias de livros e uma breve descrição de cada uma.
+
+e) Desenvolver uma tabela representando o catálogo da livraria com, no mínimo, cinco livros. A tabela deverá conter as colunas Título, Autor, Categoria e Disponibilidade, utilizando as tags <table>, <caption>, <thead>, <tbody>, <tr>, <th> e <td>.
+
+f) Formatar a tabela utilizando CSS, aplicando bordas, border-collapse, padding, largura de 100%, fonte Arial e uma cor de fundo para o cabeçalho.
+
+g) Utilizar pelo menos um dos atributos colspan ou rowspan na tabela. 
+---------------------------------------------------------------------------------  -->
+
+
+<!DOCTYPE HTML>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Livraria Leitura & Conhecimento</title>
+    <meta name="author" content="Matheus Pierre">
+  </head>
+  <body class="corpo">
+    <header class="cabecalho">
+      <h1 class="title">Livraria Leitura & Conhecimento</h1>
+      <h2 class="subtitle">Seu portal para o mundo dos livros</h2>
+      <p class="description">Bem-vindo à Livraria Leitura & Conhecimento, onde você encontra os melhores livros para expandir sua mente e enriquecer seu conhecimento.</p>
+    </header>
+    <nav>
+      <ul class="lista">
+        <li class="item-lista"><a href="#home" class="lista-link">Início</a></li>
+        <li class="item-lista"><a href="#livros" class="lista-link">Livros</a></li>
+        <li class="item-lista"><a href="#autores" class="lista-link">Autores</a></li>
+        <li class="item-lista"><a href="#contato" class="lista-link">Contato</a></li>
+        <li class="item-lista"><a href="#sobre" class="lista-link">Sobre Nós</a></li>
+      </ul>
+    </nav>
+    <section class="etapas-compra">
+        <h3 class="etapas-titulo">Etapas para realizar uma compra:</h3>
+        <ol class="etapas-lista">
+          <li class="etapas">Escolha o livro desejado.</li>
+          <li class="etapas">Adicione o livro ao carrinho.</li>
+          <li class="etapas">Revise seu carrinho de compras.</li>
+          <li class="etapas">Preencha suas informações de pagamento e envio.</li>
+          <li class="etapas">Finalize a compra e aguarde a confirmação.</li>
+        </ol>
+        <div class="bloco-categorias">
+            <h3 class="categorias-titulo">Categorias de livros:</h3>
+            <dl class="lista-categorias">
+                <dt class="categoria">Ficção</dt>
+                <dd class="descricao">Livros que exploram histórias imaginárias e criativas.</dd>
+                <dt class="categoria">Não-Ficção</dt>
+                <dd class="descricao">Livros baseados em fatos reais e informações verificáveis.</dd>
+                <dt class="categoria">Autoajuda</dt>
+                <dd class="descricao">Livros que oferecem conselhos e estratégias para o desenvolvimento pessoal.</dd>
+            </dl>
+        </div>
+    </section>
+    <section class="catalogo">
+        <h3>Catálogo de Livros:</h3>
+        <table class="tabela-catalogo">
+          <caption>Catálogo da Livraria</caption>
+          <thead>
+            <tr class="linha-tabela">
+              <th class="coluna">Título</th>
+              <th class="coluna">Autor</th>
+              <th class="coluna">Categoria</th>
+              <th class="coluna">Disponibilidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="linha-tabela">
+              <td class="coluna">O Alquimista</td>
+              <td class="coluna">Paulo Coelho</td>
+              <td class="coluna">Ficção</td>
+              <td class="coluna">Em estoque</td>
+            </tr>
+            <tr class="linha-tabela">
+              <td class="coluna">Sapiens: Uma Breve História da Humanidade</td>
+              <td class="coluna">Yuval Noah Harari</td>
+              <td class="coluna">Não-Ficção</td>
+              <td class="coluna">Em estoque</td>
+            </tr>
+            <tr class="linha-tabela">
+              <td class="coluna">Como Fazer Amigos e Influenciar Pessoas</td>
+              <td class="coluna">Dale Carnegie</td>
+              <td class="coluna">Autoajuda</td>
+              <td class="coluna">Esgotado</td>
+            </tr>
+            <tr class="linha-tabela">
+              <td class="coluna">A Menina que Roubava Livros</td>
+              <td class="coluna">Markus Zusak</td>
+              <td class="coluna">Ficção</td>
+              <td class="coluna">Em estoque</td>
+            </tr>
+            <tr class="linha-tabela">
+              <td class="coluna">A Arte da Guerra</td>
+              <td class="coluna">Sun Tzu</td>
+              <td class="coluna" rowspan="2">Estratégia e Liderança</td>
+              <td class="coluna">Em estoque</td>
+            </tr>
+            <tr class="linha-tabela">
+              <td class="coluna">O Príncipe</td>
+              <td class="coluna">Nicolau Maquiavel</td>
+              <td class="coluna">Esgotado</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+    </section>
+    
+  </body>
+</html>

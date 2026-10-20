@@ -1,0 +1,9 @@
+.tabela-catalogo{
+    border-collapse: collapse;    
+}
+.linha-tabela, .coluna{
+    border: 2px solid #000;
+}
+.catalogo{
+    padding-left: 35em;
+}

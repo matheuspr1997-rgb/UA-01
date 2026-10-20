@@ -1,0 +1,40 @@
+.etapas-compra{
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-secundaria);
+    padding: 2em 4em;
+    
+}
+.etapas-titulo{
+    font-family: var(--fonte-principal);
+    color: var(--cor-clara2);
+    font-size: 15px;
+    padding-left: 1em;
+}
+.etapas-lista{
+    width: 20%;
+}
+.etapas{
+    margin: 2px;
+    font-family: var(--fonte-principal);
+    color: var(--cor-clara2);
+    font-size: 14px;
+    padding: 0.5em;
+}
+.categorias-titulo{
+    font-family: var(--fonte-principal);
+    color: var(--cor-clara2);
+    font-size: 15px;
+    
+}
+.bloco-categorias{
+    padding-left: 22em;
+}
+.descricao, .categoria{
+    color: var(--cor-clara2);
+    font-size: 14px;
+    padding: 0.5em;
+}
+.categoria{
+    font-weight: 700;
+}
